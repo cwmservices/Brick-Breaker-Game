@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scal=1.0">
+    <title>Brick|Breaker|Game</title>
+<style>
+	body{
+		background-color:rgba(0,0,0,0.8);
+		font-family: sans-serif;
+	}
+	#breakout{
+		border: 1px solid #0ff;
+		margin-left: 330px;
+		margin-top: 30px;
+	 }
+	#sound{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+        cursor: pointer;
+        margin-top: 495px;
+        margin-left:335px;   
+	 }
+	 #Restart_div{
+	 	position: absolute;
+	 	top: 200px;
+	 	left: 155px;
+	 	color: #fff;
+	 	padding-bottom: 20px;
+	 	background: rgba(0,0,0,0.7);
+	    margin-left:187px;
+	    margin-top: -160px; 
+	    padding-right: 106px;
+	    align-items: center;
+	    padding-bottom: 150px;
+	    display: none;
+	  
+	 
+
+	 }
+	 #decideloser{
+	 	margin-left: 150px;
+	 	color: tomato;
+	
+	 }
+	 #game{
+	 	margin-left: 100px;
+	 	margin-top: 200px;
+	 	color: yellow;
+	 }
+	 #play{
+	 	margin-left: 130px;
+	 	color: hotpink;
+	 	cursor: pointer;
+	 }
+	 #decidewinner{
+	 	margin-left: 150px;
+	 	color: tomato;
+	 	display: none;
+	 }
+	   #decideloser{
+	 	margin-left: 150px;
+	 	color: tomato;
+	 	display: none;
+	 }
+
+	@media screen and (max-width: 800px){
+	#breakout{
+		border: 1px solid #0ff;
+		margin-left: 40px;
+		margin-top: 30px;
+	 }
+	 	#sound{
+           margin-left:45px;
+	 }
+	  #Restart_div{
+	    margin-left:-105px;
+	 }
+	  #decidewinner{
+	 	margin-left: 150px;
+	 	color: tomato;
+	 	display: none;
+	 }
+	   #decideloser{
+	 	margin-left: 150px;
+	 	color: tomato;
+	 	display: none;
+	 }
+	}
+</style>
+</head>
+<body>
+	<div class="sound">
+	   <img src="image/img.png" id="sound">
+	</div>
+	<div id="Restart_div">
+		<h1 id="game">GAMEOVER</h1>
+		<h3 id="decideloser">You Lose!</h3>
+		<h3 id="decidewinner">You Win!</h3>
+		<h2 id="play">Play Again!</h2>
+	</div>
+	<canvas id="breakout" width="400" height="500"></canvas>
+	<script src="script.js"></script>
+</body>
+</html>
